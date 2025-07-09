@@ -7,7 +7,7 @@ class Account:
     def withdraw(self, number):
         self.balance -= number
         if number > self.balance:
-            raise ValueError("Not enough balance")
+            raise ValueError("Not enough")
         return self.balance
 
     def deposit(self, number):

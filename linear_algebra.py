@@ -1,8 +1,15 @@
 import numpy as np
 
-# Create a vector
-a = np.array([1, 2, 3])
+def add_matrices(a, b):
+    return np.add(a, b)
 
-# Calculate the magnitude of the vector
-magnitude = np.linalg.norm(a)
-print(f"Magnitude of vector a: {magnitude}")
+def subtract_matrices(a, b):
+    return np.subtract(a, b)
+
+def magnitude(a):
+    return np.linalg.norm(a)
+
+def dot_product(a, b):
+    return np.dot(a, b)
+
+def 
