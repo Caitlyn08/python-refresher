@@ -39,6 +39,7 @@ class TestHello(unittest.TestCase):
     def test_div(self):
         self.assertEqual(hello.div(6,3), 2)
         self.assertRaises(ValueError, hello.div, 6, 0)
+        self.assertNotEqual(hello.div(6,3), 3)
 
 if __name__ == "__main__":
     unittest.main()
