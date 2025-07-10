@@ -2,9 +2,6 @@ import unittest
 import linear_algebra
 import numpy as np
 
-
-
-
 class testLinearAlgebra(unittest.TestCase):
    a = np.array([1, 2, 3])
    b = np.array([4, 5, 6])
