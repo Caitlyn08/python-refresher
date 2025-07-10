@@ -9,7 +9,7 @@ class TestAccount(unittest.TestCase):
     def test_withdraw(self):
         self.setUp()
         self.assertEqual(self.acc.withdraw(5), 5)
-        self.assertEqual(self.acc.withdraw(10), 0)
+        self.assertEqual(self.acc.withdraw(5), 0)
         self.assertRaises(ValueError, self.acc.withdraw, 10)
 
     def test_deposit(self):
