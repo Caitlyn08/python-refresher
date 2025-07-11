@@ -18,3 +18,12 @@ class testPhysics(unittest.TestCase):
 
     def test_calculate_acceleration(self):
         self.assertEqual(physics.calculate_acceleration(20, 5), 4)
+
+    def test_calculate_angular_acceleration(self):
+        self.assertEqual(physics.calculate_angular_acceleration(20, 5), 4)
+
+    def test_calculate_torque(self):
+        self.assertEqual(physics.calculate_torque(20, 30, 4), 39.99999999999999)
+
+    def test_calculate_moment_of_inertia(self):
+        self.assertEqual(physics.calculate_moment_of_inertia(2, 3), 18)
